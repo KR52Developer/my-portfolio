@@ -26,7 +26,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className='container'>
+        <div className='container' id='home'>
             <div className={`headerContainer ${scrolled ? 'scrolled' : ''}`}>
                 <div className='logoContainer' style={{ width: '20%' }}> <span className="logo"><a href='#home'>Kavin Ram</a></span></div>
 

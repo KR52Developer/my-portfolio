@@ -34,7 +34,7 @@ const Hero = () => {
         //     </div>
         //     <div><FaAnglesDown></FaAnglesDown></div>
         // </div>
-        <div className='heroContainerMain' id='home'>
+        <div className='heroContainerMain' >
             <div className='heroContainer'>
                 <div className='hellotext'><span >hello I'm <b>Kavin Ram</b></span></div>
                 <div className='descriptionContainer' >

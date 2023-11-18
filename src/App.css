@@ -255,14 +255,15 @@ a {
 }
 
 .skillsContainer {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center !important;
   gap: 50px;
   min-height: 80vh;
-  padding: 150px;
+  padding: 150px !important;
 }
+
 /* projects style */
 .projectsContainer {
   display: flex;
@@ -300,6 +301,9 @@ a {
 
 /* other devices  Style */
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     position: relative;
     top: 0;
@@ -457,7 +461,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 50px !important;
+    /* padding: 50px !important; */
   }
 
   .skills span {
@@ -491,6 +495,48 @@ a {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
+  }
+  /* projects style */
+  .projectsContainer {
+    text-align: center;
+    padding: 50px !important;
+  }
+  .projectsOne,
+  .projectsTwo,
+  .projectsThree {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .projectsTwo {
+    flex-direction: column-reverse !important;
+  }
+
+  .projectsOne img,
+  .projectsTwo img,
+  .projectsThree img {
+    width: 300px;
+    height: 250px;
+  }
+  .projectsOne span,
+  .projectsTwo span,
+  .projectsThree span {
+    font-size: 16px !important;
+  }
+
+  .projectsContainer button {
+    font-size: 15px !important;
+  }
+
+  .projectsContainer button:hover {
+    color: #fe551e;
+    background-color: #ffffff00;
+    border: 2px solid #fe551e;
+    scale: 1.1;
+  }
+
+  .projectsButtonContainer {
+    justify-content: center !important;
   }
 }
 
