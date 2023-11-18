@@ -466,7 +466,25 @@ a {
     justify-content: center !important;
     gap: 50px;
     min-height: 80vh;
+    padding: 50px !important;
+  }
+
+  /* Contact Style */
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 80vh;
     padding: 50px;
+  }
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
   }
 }
 
