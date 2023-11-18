@@ -457,6 +457,12 @@ a {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 50px !important;
+  }
+
+  .skills span {
+    font-size: 15px;
+    text-align: center;
   }
 
   .skillsContainer {
