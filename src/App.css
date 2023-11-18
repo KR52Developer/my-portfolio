@@ -388,7 +388,7 @@ a {
     flex-direction: column;
     text-align: center;
     /* justify-content: center; */
-    /* min-height: 100vh; */
+    min-height: 60vh;
   }
 
   .heroContainer {
@@ -501,7 +501,7 @@ a {
     flex-direction: column;
     text-align: center;
     /* justify-content: center; */
-    /* min-height: 100vh; */
+    min-height: 60vh;
   }
 
   .heroContainer {
