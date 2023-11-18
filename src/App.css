@@ -388,7 +388,7 @@ a {
     flex-direction: column;
     text-align: center;
     /* justify-content: center; */
-    min-height: 60vh;
+    min-height: 80vh;
   }
 
   .heroContainer {
@@ -417,11 +417,12 @@ a {
 }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
+
   .headerContainer {
-    padding: 5px 5px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    height: 20vh;
   }
 
   .menu {
@@ -483,24 +484,23 @@ a {
     position: absolute;
     top: 110px;
     left: 35px;
-    /* background: white; */
-    /* height: 100vh; */
+  
     width: 100%;
   }
   .accountContainer {
     position: absolute;
     top: 250px;
     left: 35px;
-  }
+  } */
 
-  /* Hero Style  */
+/* Hero Style  */
 
-  .heroContainerMain {
+/* .heroContainerMain {
     display: flex;
     padding: 0 50px;
     flex-direction: column;
     text-align: center;
-    /* justify-content: center; */
+   
     min-height: 80vh;
   }
 
@@ -524,4 +524,4 @@ a {
   .hellotext span {
     font-size: 18px;
   }
-}
+} */
