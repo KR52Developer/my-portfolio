@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Tangerine&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff !important;
+  font-family: "Alata", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+a {
+  transition: 0.3s ease;
+}
+
+/* Header Style */
+
+.logo a {
+  font-size: 35px;
+  color: #fe551e !important;
+  /* font-family: "Tangerine", cursive; */
+}
+
+.menuLi a {
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+.menuLi a:hover {
+  color: #fe551e !important;
+}
+
+.menuLi a:active {
+  color: #fe551e !important;
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.headerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+  padding: 10px 50px;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
+  z-index: 100;
+}
+
+.headerContainer.scrolled {
+  backdrop-filter: blur(5px);
+}
+
+.navCot {
+  display: flex;
+  justify-content: flex-end !important;
+  gap: 20px;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLinks,
+.accountContainer,
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.navLinks li a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.navLinks li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fe551e; /* Change this to the color you want */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navLinks li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu {
+  display: none;
+  width: 35px;
+  height: 30px;
+  position: relative;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.clicked .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.clicked .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu.clicked .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.menuLi {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Hero Style  */
+
+.heroContainerMain {
+  display: flex;
+  padding: 0 250px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.heroContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 50px; */
+  /* padding-right: 30px; */
+  gap: 20px;
+}
+
+.descriptionContainer {
+  display: flex;
+  line-height: 1.2;
+}
+
+.descriptionContainer span {
+  font-size: 30px;
+}
+
+/* .hellotext {
+  position: absolute;
+  top: 38%;
+  left: 15%;
+} */
+
+.hellotext span {
+  font-size: 25px;
+}
+
+/* .btnContianer {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+} */
+
+.btnContianer button {
+  color: #fe551e;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fe551e;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid #fe551e;
+  transition: 0.3s ease;
+}
+
+.btnContianer button:hover {
+  color: #ffffff !important;
+  background-color: #ffffff00;
+  border: 2px solid #ffffff;
+  scale: 1.1;
+}
+
+.heroImageContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* About Style */
+.aboutContainer {
+  display: flex;
+  min-height: 80vh;
+  padding: 150px;
+}
+
+.aboutDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.aboutDescription h2,
+.skillsContainer h2,
+.projectsContainer h2 {
+  font-size: 35px;
+}
+
+.aboutDescription span {
+  color: rgb(181, 181, 181);
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Skills Sytle */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  gap: 50px;
+  min-height: 80vh;
+  padding: 150px;
+}
+/* projects style */
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  min-height: 80vh;
+  padding: 150px;
+}
+
+.projectsContainer button:hover {
+  color: #fe551e;
+  background-color: #ffffff00;
+  border: 2px solid #fe551e;
+  scale: 1.1;
+}
+
+/* Contact Style */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-height: 80vh;
+  padding: 150px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+/* other devices  Style */
+@media screen and (max-width: 768px) {
+  .headerContainer {
+    margin: 0px;
+    padding: 5px 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .logo a {
+    font-size: 25px;
+  }
+  .menu {
+    display: block;
+    text-align: right;
+    margin: 25px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logoContainer {
+    width: 50% !important;
+  }
+  .searchContainer {
+    position: absolute;
+    top: 300px;
+    left: 35px;
+  }
+
+  .navCot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: rgb(3, 3, 3);
+    width: 100% !important;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-in-out;
+    height: 100vh;
+  }
+
+  .navCot.visible {
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: rgb(2, 2, 2);
+    width: 100% !important;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .navLinks {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 35px;
+    /* background: white; */
+    /* height: 100vh; */
+    width: 100%;
+  }
+  .accountContainer {
+    position: absolute;
+    top: 250px;
+    left: 35px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .headerContainer {
+    padding: 5px 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .menu {
+    display: block;
+    text-align: right;
+    margin: 25px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logoContainer {
+    width: 50% !important;
+  }
+  .searchContainer {
+    position: absolute;
+    top: 300px;
+    left: 35px;
+  }
+
+  .navCot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: white;
+    width: 100% !important;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-in-out;
+  }
+
+  .navCot.visible {
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    backdrop-filter: blur(2px);
+    background: white;
+    width: 100% !important;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .navLinks {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 35px;
+    /* background: white; */
+    /* height: 100vh; */
+    width: 100%;
+  }
+  .accountContainer {
+    position: absolute;
+    top: 250px;
+    left: 35px;
+  }
+}
