@@ -18,8 +18,8 @@ const About = () => {
 
                     </ul></span>
                 <div style={{ display: "flex", gap: '20px' }}>
-                    <FaGithub style={{ fontSize: "35px", cursor: 'pointer' }}></FaGithub>
-                    <FaLinkedin style={{ fontSize: "35px", cursor: 'pointer' }}></FaLinkedin>
+                    <a href="https://github.com/KR52Developer" target='blank'>  <FaGithub style={{ fontSize: "35px", cursor: 'pointer' }}></FaGithub></a>
+                    <a href="https://www.linkedin.com/in/kavin-ram/" target='blank'> <FaLinkedin style={{ fontSize: "35px", cursor: 'pointer' }}></FaLinkedin></a>
                 </div>
                 <a href='#skills'><FaAnglesDown></FaAnglesDown>{" "}Skills</a>
 
