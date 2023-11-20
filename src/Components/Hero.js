@@ -42,7 +42,7 @@ const Hero = () => {
                 </div>
                 <div ><span className='introSpan'>With a passion for coding and a knack for problem-solving. I specialize in creating dynamic and responsive web applications using MongoDB, Express.js, React.js, and Node.js.</span></div>
                 <div className='btnContianer'>
-                    <button>Download CV</button>
+                    <a href='https://github.com/KR52Developer/my-resume/raw/main/KAVIN%20RAMALINGAM.pdf' target='blank'><button>Download CV</button></a>
                 </div>
                 <div style={{ display: "flex", gap: '20px' }}>
                     <a href="https://github.com/KR52Developer" target='blank'>  <FaGithub style={{ fontSize: "35px", cursor: 'pointer' }}></FaGithub></a>
