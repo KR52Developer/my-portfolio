@@ -10,7 +10,7 @@ const Contact = () => {
                 <FaLinkedin style={{ fontSize: "35px", cursor: 'pointer' }}></FaLinkedin><a href='https://www.linkedin.com/in/kavin-ram/'><span>Linkedin</span></a>
                 <FaEnvelopeOpenText style={{ fontSize: "35px", cursor: 'pointer' }}></FaEnvelopeOpenText><a href='mailto:kavinram052@gmail.com'><span>kavinram052@gmail.com</span></a>
             </div>
-            <a href='#home'><FaAnglesUp></FaAnglesUp>{" "}Home</a>
+            <a href='#hero'><FaAnglesUp></FaAnglesUp>{" "}Home</a>
 
         </div>
     );

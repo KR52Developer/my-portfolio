@@ -27,8 +27,8 @@ const Header = () => {
 
     return (
         <div className='container' id='home'>
-            <div className={`headerContainer ${scrolled ? 'scrolled' : ''}`}>
-                <div className='logoContainer' style={{ width: '20%' }}> <span className="logo"><a href='#home'>Kavin Ram</a></span></div>
+            <div className={`headerContainer ${scrolled ? 'scrolled' : ''}`} >
+                <div className='logoContainer' style={{ width: '20%' }}> <span className="logo"><a href="#hero">Kavin Ram</a></span></div>
 
                 <div className={`navCot ${navVisible ? 'visible' : ''}`} style={{ width: '80%' }} >
                     <div className='navContainer' style={{ width: '30%' }}>

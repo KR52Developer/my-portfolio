@@ -8,7 +8,7 @@
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
-  color: #ffffff !important;
+  color: #ffffff;
   font-family: "Alata", sans-serif;
 }
 
@@ -18,9 +18,13 @@ body {
 a {
   transition: 0.3s ease;
 }
-
+h2 {
+  color: #fe551e !important;
+}
 /* Header Style */
-
+.name {
+  color: #fe551e !important;
+}
 .logo a {
   font-size: 35px;
   color: #fe551e !important;
@@ -53,7 +57,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0 100px;
-  padding: 10px 50px;
+  padding: 10px 45px;
   /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
   z-index: 100;
 }
@@ -152,10 +156,10 @@ a {
 
 .heroContainerMain {
   display: flex;
-  padding: 0 250px;
+  padding: 0 150px;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  gap: 50px;
 }
 
 .heroContainer {
@@ -163,7 +167,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /* padding: 10px 50px; */
   /* padding-right: 30px; */
   gap: 20px;
@@ -220,10 +224,23 @@ a {
   justify-content: center;
 }
 /* About Style */
+
+.aboutContent {
+  font-size: 18px;
+  line-height: 35px;
+  list-style: decimal;
+  color: rgb(177, 175, 175);
+}
+
+.aboutStrong {
+  font-size: 18px !important;
+
+  color: #fe551e !important;
+}
 .aboutContainer {
   display: flex;
   min-height: 80vh;
-  padding: 150px;
+  padding: 165px;
 }
 
 .aboutDescription {
@@ -242,16 +259,16 @@ a {
 .aboutDescription span {
   color: rgb(181, 181, 181);
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Skills Sytle */
 .skills {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .skillsContainer {
@@ -392,6 +409,9 @@ a {
   }
 
   /* Hero Style  */
+  .introSpan {
+    font-size: 13px;
+  }
 
   .heroContainerMain {
     display: flex;
@@ -400,6 +420,7 @@ a {
     text-align: center;
     /* justify-content: center; */
     min-height: 80vh;
+    gap: 0;
   }
 
   .heroContainer {
@@ -408,6 +429,7 @@ a {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 15px;
+    align-items: center !important;
   }
 
   .heroImageContainer {
@@ -427,6 +449,13 @@ a {
   }
 
   /* About Style */
+
+  .aboutContent,
+  .aboutStrong {
+    font-size: 15px !important;
+    text-align: justify;
+  }
+
   .aboutContainer {
     display: flex;
     min-height: 80vh;
